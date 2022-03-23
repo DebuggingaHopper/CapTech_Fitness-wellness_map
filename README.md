@@ -3,11 +3,24 @@ This project is my submission for Capitol Tech Hackathon 2022, this is an intera
 
 ## Purpose
 
-The prupose of this application is to follow the theme which is to endorse fitness and mental wellness. Now the question is how can I do that with this application. I noticed that in Capitol Technology University, some students are not aware of the different activities that allow students to not only be physically fit but also be mentally well in their own way. To demonstrate this, I wanted to create an interactive map of the campus which includes the different activities and facilities I believe truly help students be physcially fit but also be mentally well. I made this map under the idea of providing this to other students so they are aware of these activities and facilities since from my experinece they have helped me alot to be mentally and physcially well, and I believe this type of application not only fits my criteria for making one but also fits with the theme of endorsing fitness and mental wellness.
+The purpose of this application is to follow the theme, which is to endorse fitness and mental wellness. Now the question is how can I do that with this application. I noticed that in Capitol Technology University, some students are not aware of the different activities that allow students to not only be physically fit but also be mentally well in their own way. To demonstrate this, I wanted to create an interactive map of the campus that includes the different activities and facilities I believe truly help students be physically fit but also be mentally well. I made this map under the idea of providing this to other students, so they are aware of these activities and facilities since from my experience they have helped me a lot to be mentally and physically well, and I believe this type of application not only fits my criteria for making one but also fits with the theme of endorsing fitness and mental wellness.
+
+
+## Challanges
+
+To be completely honest, there were some challenges I faced due to the fact I was initially lost when it came to what I wanted to create for this Hackathon. I was initially stumped, however after some time, I was able to figure out what I wanted to create. From there I faced the usual challenges like errors and little mix-ups I made visually that I then resolved later on in development. Overall I was able to make some good progress in the development of this application and ensuring the number of challenges was not as much as compared to previous projects.
 
 ## Resources utilized
 
-Priot to making this project, I was essentially new to making an application that utilizes a map. I have never worked with maps nor really had to make an interactive map before. So while digging into the subject I found about the [Folium](https://python-visualization.github.io/folium/index.html) library which allowed me to create a basic map of the campus, and while playing around with it, I was able to do what i seeked to do thanks to the [geojson.io](http://geojson.io/#map=2/20.0/0.0) also allowing the process to get the longitude and latitude values far easier.
+Prior to making this project, I was essentially new to making an application that utilizes a map. I have never worked with maps nor really had to make an interactive map before. So while digging into the subject I found about the [Folium](https://python-visualization.github.io/folium/index.html) library which allowed me to create a basic map of the campus, and while playing around with it, I was able to do what I sought to do thanks to the [geojson.io](http://geojson.io/#map=2/20.0/0.0) also allowing the process to get the longitude and latitude values to become far easier.
+
+## Final Product
+
+As you will see throughout the README file located in the src folder, by utilizing the Folium library and [Flask](https://flask.palletsprojects.com/en/2.0.x/), I was able to create the following output for my desired application: 
+
+![Completed_Map](https://user-images.githubusercontent.com/49813790/159804636-f33afe57-15bf-48f7-bdb1-002f01eba539.png)
+
+
 
 
 
