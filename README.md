@@ -14,11 +14,42 @@ To be completely honest, there were some challenges I faced due to the fact I wa
 
 Prior to making this project, I was essentially new to making an application that utilizes a map. I have never worked with maps nor really had to make an interactive map before. So while digging into the subject I found about the [Folium](https://python-visualization.github.io/folium/index.html) library which allowed me to create a basic map of the campus, and while playing around with it, I was able to do what I sought to do thanks to the [geojson.io](http://geojson.io/#map=2/20.0/0.0) also allowing the process to get the longitude and latitude values to become far easier.
 
-## Final Product
+
+### Final Map 
 
 As you will see throughout the README file located in the src folder, by utilizing the Folium library and [Flask](https://flask.palletsprojects.com/en/2.0.x/), I was able to create the following output for my desired application: 
 
 ![Completed_Map](https://user-images.githubusercontent.com/49813790/159804636-f33afe57-15bf-48f7-bdb1-002f01eba539.png)
+
+# Using Flask
+
+Now that I have a good porition of the foundation completed, I want to be able for it to run on a [Flask](https://flask.palletsprojects.com/en/2.0.x/) Application. To do so, I had to do the following:
+
+```
+app = Flask(__name__)
+
+
+@app.route('/')
+def index():
+    start_coords = (39.046900, -76.850400)
+    map_cap = folium.Map(location=start_coords, width="100%", zoom_start=17)
+
+    feild_cap = 'field.geojson'
+    display(folium.GeoJson(feild_cap, name="Feild").add_to(map_cap))
+....
+....
+....
+....
+....
+....
+return map_cap._repr_html_()
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+This makes it so that the Map created is returned as an html and would have the app do the function index when executed displaying the user the created interactive map.
 
 
 
