@@ -1,21 +1,21 @@
 # The main Source File
 
-Within here you will have access to the main .py file. If you go to the next folder you will have access to all the png files, and GEOJSON files utilized for this project.
+Within here, you will have access to the main .py file. If you go to the next folder, you will have access to all the PNG files, and GEOJSON files utilized for this project.
 
-## The necessray Library for making a basic map
+## The necessary Library for making a basic map
 
-So before anything let's delve into the code of this program. I made this a flask application which essentially just shows the user an interactive map of the University. To Display said map I had to use the folium library and write the following lines of code:
+So before anything, let's delve into the code of this program. I made this a flask application that essentially just shows the user an interactive map of the University. To Display said map, I had to use the folium library and write the following lines of code:
 
 ```
 start_coords = (39.046900, -76.850400)
 map_cap = folium.Map(location=start_coords, width="100%", zoom_start=17)
 ```
 
-I was able to acquire the longitude and latitude thanks to Google maps providing said information making it very easy to acquire this information prior to actually making the map.Then if we just call the map in jupyter notebook it would give us the following output:
+I was able to acquire the longitude and latitude thanks to Google maps providing said information, making it very easy to acquire this information prior to actually making the map. Then, if we just call the map in the Jupyter notebook, it would give us the following output:
 
 ![Default_map](https://user-images.githubusercontent.com/49813790/159801992-806c7e78-f039-444c-896e-05fa7e1cf59a.png)
 
-What I wanted to accomplish was make some changes on the map by highlighting certain locations and placing markers with specefic icons that when tocuhed upon display information about the activity or facility. To do so is very simple thanks to the folium library which allows me to do the following with the following code:
+What I wanted to accomplish was to make some changes on the map by highlighting certain locations and placing markers with specific icons that when touched upon display information about the activity or facility. To do so is very simple thanks to the folium library, which allows me to do the following with the following code:
 
 ```
 feild_cap = 'field.geojson'
@@ -26,11 +26,11 @@ location_feild = [39.046041133926806, -76.85143992304802]
     folium.Marker(location=location_feild, popup=popupfeild, icon=iconfeild).add_to(map_cap)
 ```
 
-You may be wondering how did I make this GeoJson file, and I want to thank [geojson.io](http://geojson.io/#map=2/20.0/0.0) which allowed me to make the GeoJson files of the specefied locations very easily. Now thanks to that same website I was able to acquire specefic latitude and longitude files o place the markers exactly where I want it to be located. I would then make sure that the icon is a custom icon, and that the popup is what I want the user to know, and finally add it to the map we created previouly.
+You may be wondering how did I make this GeoJson file, and I want to thank [geojson.io](http://geojson.io/#map=2/20.0/0.0) which allowed me to make the GeoJson files of the specified locations very easily. Now thanks to that same website I was able to acquire specific latitude and longitude files to place the markers exactly where I want them to be located. I would then make sure that the icon is a custom icon, that the popup is what I want the user to know, and finally add it to the map we created previously.
 
-## Creating a pathway for a jogging / walking route
+## Creating a pathway for a jogging/walking route
 
-We would then do this for various other locations and facilities which would finally leave us with the final part I wanted to implment which was a path users can see as an ideal walking / jogging path I believe is the best to ensure you not only have a good jog but also have enough time for yourself. I took into account the scenery one would see as a student while also taking into account the total time this would take from my estimation. To make the path I would then need to write the following line of code:
+We would then do this for various other locations and facilities which would finally leave us with the final part I wanted to implement which was a path users can see as an ideal walking/jogging path I believe is the best to ensure you not only have a good jog but also have enough time for yourself. I took into account the scenery one would see as a student, while also taking into account the total time this would take from my estimation. To make the path, I would then need to write the following line of code:
 
 ```
 folium.plugins.AntPath([[39.0454068238309, -76.85056149959563], [39.04540265757169, -76.85084581375122],
@@ -55,7 +55,7 @@ folium.plugins.AntPath([[39.0454068238309, -76.85056149959563], [39.045402657571
         map_cap)
 ```
 
-Once again thanks to [geojson.io](http://geojson.io/#map=2/20.0/0.0)I was able to acquire all of the necessray latitude and longitude values for the pathway I wanted to display. I also used the plugin known as AntPath to display this pathway with a nice effect as demonstrated below:
+Once again, thanks to [geojson.io](http://geojson.io/#map=2/20.0/0.0)I was able to acquire all the necessary latitude and longitude values for the pathway I wanted to display. I also used the plugin known as AntPath to display this pathway with a nice effect as demonstrated below:
 
 ![Completed_Map](https://user-images.githubusercontent.com/49813790/159804636-f33afe57-15bf-48f7-bdb1-002f01eba539.png)
 
