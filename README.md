@@ -1,18 +1,22 @@
 # CapTech_Fitness-wellness_map
-This project is my submission for Capitol Tech Hackathon 2022, this is an interactive map of the university which contains events, and activities held on campus to help students fitness and mental wellness.
+This project is my submission for Capitol Tech Hackathon 2022, this is an interactive map of the university which contains events, and activities held on campus to help students' fitness and mental wellness.
 
 ## Purpose
 
 The purpose of this application is to follow the theme, which is to endorse fitness and mental wellness. Now the question is how can I do that with this application. I noticed that in Capitol Technology University, some students are not aware of the different activities that allow students to not only be physically fit but also be mentally well in their own way. To demonstrate this, I wanted to create an interactive map of the campus that includes the different activities and facilities I believe truly help students be physically fit but also be mentally well. I made this map under the idea of providing this to other students, so they are aware of these activities and facilities since from my experience they have helped me a lot to be mentally and physically well, and I believe this type of application not only fits my criteria for making one but also fits with the theme of endorsing fitness and mental wellness.
 
+## How I got my information regarding activities
 
-## Challanges
+In essence, I got my information from my own experiences on campus. This may seem a bit inefficient, however, I used my understanding of campus activities to create the map with the activities and facilities I believe can aid students to relieve stress or conduct physical activity which is entertaining. Currently, there are discussions of possibly having hammock stands around campus but since that's not been approved as of now, I can not add that to the map so that does highlight a limitation I had. Overall, I just placed markers based on the activities and facilities that can help students both physically and mentally.
+
+
+## Challenges
 
 To be completely honest, there were some challenges I faced due to the fact I was initially lost when it came to what I wanted to create for this Hackathon. I was initially stumped, however after some time, I was able to figure out what I wanted to create. From there I faced the usual challenges like errors and little mix-ups I made visually that I then resolved later on in development. Overall I was able to make some good progress in the development of this application and ensuring the number of challenges was not as much as compared to previous projects.
 
 ## Resources utilized
 
-Prior to making this project, I was essentially new to making an application that utilizes a map. I have never worked with maps nor really had to make an interactive map before. So while digging into the subject I found about the [Folium](https://python-visualization.github.io/folium/index.html) library which allowed me to create a basic map of the campus, and while playing around with it, I was able to do what I sought to do thanks to the [geojson.io](http://geojson.io/#map=2/20.0/0.0) also allowing the process to get the longitude and latitude values to become far easier.
+Prior to making this project, I was essentially new to making an application that utilizes a map. I have never worked with maps, nor really had to make an interactive map before. So while digging into the subject I found about the [Folium](https://python-visualization.github.io/folium/index.html) library which allowed me to create a basic map of the campus, and while playing around with it, I was able to do what I sought to do thanks to the [geojson.io](http://geojson.io/#map=2/20.0/0.0) also allows the process to get the longitude and latitude values to become far easier.
 
 
 ### Final Map 
@@ -23,7 +27,7 @@ As you will see throughout the README file located in the src folder, by utilizi
 
 # Using Flask
 
-Now that I have a good porition of the foundation completed, I want to be able for it to run on a [Flask](https://flask.palletsprojects.com/en/2.0.x/) Application. To do so, I had to do the following:
+Now that I have a good portion of the foundation completed, I want to be able for it to run on a [Flask](https://flask.palletsprojects.com/en/2.0.x/) Application. To do so, I had to do the following:
 
 ```
 app = Flask(__name__)
@@ -49,10 +53,4 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-This makes it so that the Map created is returned as an html and would have the app do the function index when executed displaying the user the created interactive map.
-
-
-
-
-
-
+This makes it so that the Map created is returned as an HTML and would have the app do the function index when executed, displaying the user the created interactive map.
