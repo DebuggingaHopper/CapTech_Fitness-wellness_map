@@ -4,7 +4,7 @@ Within here, you will have access to the main .py file. If you go to the next fo
 
 ## The necessary Library for making a basic map
 
-So before anything, let's delve into the code of this program. I made this a flask application that essentially just shows the user an interactive map of the University. To Display said map, I had to use the folium library and write the following lines of code:
+So before anything, let's delve into the code of this program. I made this a flask application that essentially just shows the user an interactive map of the University. To Display said map, I had to use the [Folium](https://python-visualization.github.io/folium/index.html) library and write the following lines of code:
 
 ```
 start_coords = (39.046900, -76.850400)
