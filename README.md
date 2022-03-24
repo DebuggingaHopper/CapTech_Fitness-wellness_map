@@ -21,7 +21,7 @@ Prior to making this project, I was essentially new to making an application tha
 
 ### Final Map 
 
-As you will see throughout the README file located in the src folder, by utilizing the Folium library and [Flask](https://flask.palletsprojects.com/en/2.0.x/), I was able to create the following output for my desired application: 
+As you will see throughout the README file located in the src folder, by utilizing the [Folium](https://python-visualization.github.io/folium/index.html) library and [Flask](https://flask.palletsprojects.com/en/2.0.x/), I was able to create the following output for my desired application: 
 
 ![Completed_Map](https://user-images.githubusercontent.com/49813790/159804636-f33afe57-15bf-48f7-bdb1-002f01eba539.png)
 
