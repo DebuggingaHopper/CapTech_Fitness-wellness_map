@@ -34,11 +34,11 @@ In this section, I will delve into [Geojson.io](http://geojson.io/#map=2/20.0/0.
 
 ### Creating outline with Geojson.io
 
-In this little section, I will demonstrate how I made a GEOJSON file for the Telecom Hall. Thanks to GeoJson.io I was able to make the outline by manually creating lines over what I deem to be the correct outline for the telecom hall. Once I manually created the lines, it would look like the following on the website:
+In this little section, I will demonstrate how I made a GEOJSON file for the Telecom Hall. Thanks to [geojson.io](http://geojson.io/#map=2/20.0/0.0) I was able to make the outline by manually creating lines over what I deem to be the correct outline for the telecom hall. Once I manually created the lines, it would look like the following on the website:
 
 ![telecommoutline](https://user-images.githubusercontent.com/49813790/159933780-c1db9487-1374-429e-b39c-8e6dfa785480.png)
 
-Now the question is how does this image become added to the map in my program. Well, you see on geojson.io once I completed that outline it has the following code:
+Now the question is how does this image become added to the map in my program. Well, you see on [geojson.io](http://geojson.io/#map=2/20.0/0.0) once I completed that outline it has the following code displayed:
 
 ```
 {
@@ -126,7 +126,7 @@ Now that I was able to create the outline, I would need to manually create a pat
 
 We would then just copy the coordinates, inverse the order since it should be latitude first and then longitude instead of how we have it currently.
 
-As displayed earlier before, we would then be given code that looks like the following given by geojson.io:
+As displayed earlier before, we would then be given code that looks like the following given by [geojson.io](http://geojson.io/#map=2/20.0/0.0):
 
 ```
 {
