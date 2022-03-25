@@ -2,8 +2,8 @@
 # Capitol Tech Hackathon 2022 Submission
 # Date Of Initial Creation: 3/22/2022
 # Date of Completion of Beta: 3/23/2022
-# Purpose: to create an interactive map that allows students to know of the different activities on facilities on campus that can help them enoy their time on campus even more while being active.
-# Import the necessray libraries that will be utilized
+# Purpose: to create an interactive map that allows students to know of the different activities on facilities on campus that can help them enjoy their time on campus even more while being active.
+# Import the necessary libraries that will be utilized
 from IPython.core.display import display
 from flask import Flask
 
@@ -77,7 +77,7 @@ def index():
     popupma = "Occasioanlyl students play their instruments allowing many to be able to enjoy soothing and humorous music to ease their minds."
     folium.Marker(location=location_ma, popup=popupma, icon=iconma).add_to(map_cap)
 
-    # The following lines of code place a marker in the specefied location with the specefic icon for the basketball court
+    # The following lines of code place a marker in the specified location with the specific icon for the basketball court
     location_bc = [39.047897682056664, -76.85303248465061]
     iconbc = folium.features.CustomIcon('Basketball.png', icon_size=(10, 10))
     popupbc = "The University has a basketball which requires a little walk which makes it an excellent spot for students to not only do a jog but also have a game of basketball making sure they have alone time while also going all out on the court."
@@ -142,13 +142,13 @@ def index():
                   popup='The Adventure club allows students to participate in fun events such as the GoKart Event occuring on April 1st 2022',
                   icon=folium.features.CustomIcon('Adventure.png', icon_size=(14, 14))).add_to(map_cap)
 
-    # The following code place a marker in the specefied location with the specefic icon for the route displayed throughout the map
+    # The following code place a marker in the specified location with the specific icon for the route displayed throughout the map
     folium.Marker(
         location=[39.04539953287714,-76.85084715485573],
-        popup='The following route is one students can take for a jog or walk to enjoy some time of tranquility.',
+        popup='The following route is one student can take for a jog or walk to enjoy some time of tranquility.',
     ).add_to(map_cap)
 
-    # The following code place a marker in the specefied location with the specefic icon for the place in the auditorium which indicates tours and open houses
+    # The following code place a marker in the specified location with the specific icon for the place in the auditorium which indicates tours and open houses
     folium.Marker(
         location=[39.04582292773025,-76.85019940137862], # coordinates for the marker (Earth Lab at CU Boulder)
         popup='We have a tour on 3/25 and an open house on 3/26, this can help students who volunteer to be able to improve their communication skills while helping others.', # pop-up label for the marker,
